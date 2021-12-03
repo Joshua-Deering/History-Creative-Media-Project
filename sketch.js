@@ -1,3 +1,5 @@
+
+
 let w = 800,
     h = 800 //canvas width and height
 
@@ -9,7 +11,11 @@ let state = 2;
 let img;
 
 function setup() {
-    createCanvas(w, h);
+    let canvas = createCanvas(w, h);
+
+    let bg = document.getElementById("bg")
+    canvas.parent(bg)
+
     angleMode(DEGREES);
     img = loadImage("./images/map.jpg");
 
