@@ -7,7 +7,7 @@ let entityManager;
 let playerManager;
 
 let states = [];
-let state = 2;
+let state = 10;
 let img;
 
 function setup() {
